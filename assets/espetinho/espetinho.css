@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {  
+    background-color: #DDA0DD;
+}
+.naty {
+    display: flex;
+    justify-content: center;
+    margin-right: 18vh;
+    width: 100%;
+    height: 20vh;
+}
+
+li {
+    padding: 5vh;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+/* nav-bar */
+.nav-bar {
+    background-color:#771212de;
+}
+a{
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'CaviarDreams';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+.naty h1{
+    padding-left: 2vh;
+    padding-top: 6vh;
+    font-family: 'Vampires';
+    font-size: 2rem;
+}
+li:hover {
+    text-shadow: 0 0 10px #774077;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+
+.logo {
+    background-size: cover;
+    width: 10vh;
+    height: 8vh;
+    padding-top: 4vh;
+    padding-left: 2vh ;
+}
+
+img {
+    background-size: cover;
+    height: 60vh;
+    width: 60vh;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #DDA0DD, transparent);
+}
+/* imagem */
+.Espetinho img{
+    background-size: cover;
+    width: 60%;
+    height: 60%;
+}
+/* combo espetinho */
+
+.container_espetinho{
+    padding-top: 10vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    padding-bottom: 5vh;
+}
+.Combo2{
+    width: 40%;
+    background: #DDA0DD;
+    box-shadow: 30px 10px 42px 0 rgba( 31, 38, 135 ,0.37 ) ;
+    backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1.5px solid #c462c4  ;
+    font-family: 'Saira';
+}
+.Combo2 p{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 3em;
+    font-family: 'Vintage Queens';
+}
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../fonte/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: 'Vintage Queens' ;
+    src: url(../fonte/VintageQueens-PersonalUse.ttf);
+}
+@font-face {
+    font-family: 'Vampires';
+    src: url(../fonte/Vampires.otf);
+
+}
+@media screen and (max-width: 767px) {
+    .Combo2 {
+        width: 80%;
+    }
+}

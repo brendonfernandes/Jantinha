@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {  
+    background-color: #DDA0DD;
+}
+.naty {
+    display: flex;
+    justify-content: center;
+    margin-right: 18vh;
+    width: 100%;
+    height: 20vh;
+}
+li{
+    padding: 5vh;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+
+
+
+a {
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+
+.naty h1{
+    padding-left: 2vh;
+    padding-top: 6vh;
+    font-family: 'Vampires';
+    font-size: 2rem;
+}
+li:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.logo {
+    background-size: cover;
+    width: 10vh;
+    height: 8vh;
+    padding-top: 4vh;
+    padding-left: 2vh ;
+}
+
+img {
+    background-size: cover;
+    height: 60vh;
+    width: 60vh;
+}
+.banner hr{
+    width: 10vh;
+}
+hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #DDA0DD, transparent);
+}
+
+
+
+/* Responsivo nav-bar  */
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(25 , 25 , 25);
+    margin: 8px;
+}
+
+
+
+/* nav-bar */
+.nav-bar{
+    background-color:#771212de;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'CaviarDreams';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+li:hover{
+    text-shadow: 0 0 10px #774077;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+.logo {
+    background-size: cover;
+    width: 10vh;
+    height: 8vh;
+    padding-top: 4vh;
+    padding-left: 2vh ;
+}
+img {
+    background-size: cover;
+    height: 60vh;
+    width: 60vh;
+}
+/* imagem  */
+.Bolo img{
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: 100%;
+    height: 20%;
+}
+
+.container-sobremesa{
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
+}
+.sobremesa{
+    width: 40%;
+    background: #DDA0DD;
+    box-shadow: 30px 10px 42px 0 rgba( 31, 38, 135 ,0.37 ) ;
+    backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1.5px solid #c462c4  ;
+    font-family: 'Saira';
+    text-align: center;
+}
+p{
+    font-family: 'Vintage Queens' ;
+    font-size: 3em;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../fonte/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: 'Vintage Queens' ;
+    src: url(../fonte/VintageQueens-PersonalUse.ttf);
+}
+@font-face {
+    font-family: 'Vampires';
+    src: url(../fonte/Vampires.otf);
+
+}
+@media screen and (max-width: 767px) {
+    .sobremesa {
+        width: 80%;
+    }
+    body {
+        overflow: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 25vh;
+        right: 0;
+        width: 100vw;
+        height: 50vh;
+        background: #771212de;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+.nav-list.active{
+    transform: translateX(0);
+}

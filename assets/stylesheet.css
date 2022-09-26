@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #DDA0DD;
+}
+
+.naty {
+    display: flex;
+    justify-content: center;
+    margin-right: 18vh;
+    width: 100%;
+    height: 20vh;
+}
+
+li {
+    padding: 5vh;
+    cursor: pointer;
+    color:rgba(25 , 25, 25);
+}
+
+/* nav-bar */
+.nav-bar {
+    background-color:#771212de;
+}
+a{
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'CaviarDreams';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+.naty h1{
+    padding-left: 2vh;
+    padding-top: 6vh;
+    font-family: 'Vampires';
+    font-size: 2rem;
+}
+li:hover {
+    text-shadow: 0 0 10px #774077;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+
+.logo {
+    background-size: cover;
+    width: 10vh;
+    height: 8vh;
+    padding-top: 4vh;
+    padding-left: 2vh ;
+}
+
+img {
+    background-size: cover;
+    height: 60vh;
+    width: 60vh;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #DDA0DD, transparent);
+}
+/* Responsivo nav-bar  */
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(25 , 25 , 25);
+    margin: 8px;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    font-family: 'CaviarDreams';
+    letter-spacing: 2px;
+}
+
+.ola {
+    font-size: 1.2em;
+}
+
+.banner_imagem {
+    display: flex;
+    justify-self: right;
+}
+
+/* Frase */
+.Frase h1{
+    border-right: 2px solid rgba(25 , 25, 25);
+}
+.Frase {
+    padding-top: 5vh;
+}
+.typing-animation {
+    animation: blinkCursor 500ms infinite normal;
+}
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(25 , 25, 25);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+/* descrição de produtos*/
+.opcoe {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    background-color: #d35f86b6;
+    width: 200vh;
+    border-radius: 8px;
+    margin-top: 11vh;
+    height: 70vh;
+}
+
+.lista_opca {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vh;
+}
+
+/* #footer */
+.roda_pe {
+    display: flex;
+    height: 2vw;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_roda_pe {
+    height: 5vh;
+}
+.container_roda_pe hr {
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #771212de, transparent);
+}
+.contato {
+    padding-top: 8vh;
+    font-family: 'CaviarDreams';
+}
+
+.contato h1 {
+    font-size: 1em;
+}
+
+.contato p {
+    font-size: 1.6rem;
+}
+
+.rede_social img {
+
+    background-size: cover;
+    width: 20vh;
+    height: 20vh;
+
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../assets/fonte/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: 'Vintage Queens';
+    src: url(../assets/fonte/VintageQueens-PersonalUse.ttf);
+}
+@font-face {
+    font-family: 'BlushfulDemoRegular';
+    src: url(../assets/fonte/BlushfulDemoRegular.ttf);
+}
+@font-face {
+    font-family: 'Vampires';
+    src: url(fonte/Vampires.otf);
+}
+
+/* Responsividade */
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        overflow: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 25vh;
+        right: 0;
+        width: 100vw;
+        height: 50vh;
+        background: #771212de;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .mobile-menu{
+        display: block;
+        
+    }
+    img{
+        width: 100%;
+    }
+    .banner_imagem{
+        display: flex;
+        justify-content: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 3vh;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.nav-list.active{
+    transform: translateX(0);
+}
