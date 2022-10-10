@@ -231,22 +231,22 @@ hr {
 
 @font-face {
     font-family: 'Saira';
-    src: url(../fonte/Saira.ttf);
+    src: url(fonte/Saira.ttf)
 }
 
 @font-face {
     font-family: 'CaviarDreams';
-    src: url(../assets/fonte/CaviarDreams.ttf);
+    src: url(fonte/CaviarDreams.ttf);
 }
 
 @font-face {
     font-family: 'Vintage Queens';
-    src: url(../assets/fonte/VintageQueens-PersonalUse.ttf);
+    src: url(fonte/VintageQueens-PersonalUse.ttf);
 }
 
 @font-face {
     font-family: 'BlushfulDemoRegular';
-    src: url(../assets/fonte/BlushfulDemoRegular.ttf);
+    src: url(fonte/BlushfulDemoRegular.ttf);
 }
 
 @font-face {
