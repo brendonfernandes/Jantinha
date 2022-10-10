@@ -3,8 +3,7 @@
     padding: 0;
     text-decoration: none;
 }
-
-body {
+body{
     background-color: #DDA0DD;
 }
 
@@ -19,21 +18,19 @@ body {
 li {
     padding: 5vh;
     cursor: pointer;
-    color: rgba(25, 25, 25);
+    color:rgba(25 , 25, 25);
 }
 
 /* nav-bar */
 .nav-bar {
-    background-color: #771212de;
+    background-color:#771212de;
 }
-
-a {
+a{
     color: black;
     display: flex;
     font-weight: bold;
 }
-
-.nav-list {
+.nav-list{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -43,14 +40,12 @@ a {
     font-weight: bold;
     font-size: 1em;
 }
-
-.naty h1 {
+.naty h1{
     padding-left: 2vh;
     padding-top: 6vh;
     font-family: 'Vampires';
     font-size: 2rem;
 }
-
 li:hover {
     text-shadow: 0 0 10px #774077;
     transition: 0.5s;
@@ -62,7 +57,7 @@ li:hover {
     width: 10vh;
     height: 8vh;
     padding-top: 4vh;
-    padding-left: 2vh;
+    padding-left: 2vh ;
 }
 
 img {
@@ -76,106 +71,31 @@ hr {
     height: 3px;
     background-image: linear-gradient(to right, transparent, #DDA0DD, transparent);
 }
-
 /* Responsivo nav-bar  */
-.mobile-menu {
+.mobile-menu{
     display: none;
     cursor: pointer;
 }
-
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: rgb(25, 25, 25);
+    background: rgb(25 , 25 , 25);
     margin: 8px;
 }
 
-/* Banner */
-
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 75vh;
-    font-family: 'CaviarDreams';
-    letter-spacing: 2px;
-}
-
-.ola {
-    font-size: 1.2em;
-}
-
-.banner_imagem {
-    display: flex;
-    justify-self: right;
-}
-
-/* Frase */
-
-.Frase {
-    padding-top: 5vh;
-}
-
-/* descrição de produtos*/
-.opcoe {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    background-color: #d35f86b6;
-    width: 200vh;
-    border-radius: 8px;
-    margin-top: 11vh;
-    height: 70vh;
-}
-
-.lista_opca {
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 4vh;
-}
-
-.horario {
+.horario{
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 5vh;
     letter-spacing: 2px;
     font-family: 'Saira';
-    height: 70vh;
 }
-
-.horario h1 {
+.horario h1{
     font-family: 'Vintage Queens';
     font-size: 3rem;
     padding-bottom: 5vh;
 }
-.pagamento{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 70vh;
-
-}
-.pagamento img {
-    width: 70vh;
-    height: 45vh;
-}
-.pagamento a{
-    padding: 15px;
-    background: linear-gradient(89.16deg, #06090F -7.21%, #1cec15 148.5%);
-    color: #fafafa;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-}
-
 /* #footer */
 .roda_pe {
     display: flex;
@@ -187,12 +107,10 @@ hr {
 .container_roda_pe {
     height: 5vh;
 }
-
 .container_roda_pe hr {
     height: 3px;
     background-image: linear-gradient(to right, transparent, #771212de, transparent);
 }
-
 .contato {
     padding-top: 8vh;
     font-family: 'CaviarDreams';
@@ -213,116 +131,91 @@ hr {
     height: 20vh;
 
 }
-
-.ifood img {
+.ifood img{
     background-size: cover;
     width: 15vh;
     height: 10vh;
     padding-top: 6vh;
-
+    
 }
-
-.whatsapp img {
+.whatsapp img{
     background-size: cover;
     width: 12vh;
     height: 12vh;
     padding-top: 4vh;
 }
-
 @font-face {
     font-family: 'Saira';
     src: url(../fonte/Saira.ttf);
 }
-
 @font-face {
     font-family: 'CaviarDreams';
-    src: url(../assets/fonte/CaviarDreams.ttf);
+    src: url(../fonte/CaviarDreams.ttf);
 }
 
 @font-face {
     font-family: 'Vintage Queens';
-    src: url(../assets/fonte/VintageQueens-PersonalUse.ttf);
+    src: url(../fonte/VintageQueens-PersonalUse.ttf);
 }
-
 @font-face {
     font-family: 'BlushfulDemoRegular';
-    src: url(../assets/fonte/BlushfulDemoRegular.ttf);
+    src: url(../fonte/BlushfulDemoRegular.ttf);
 }
-
 @font-face {
     font-family: 'Vampires';
-    src: url(fonte/Vampires.otf);
+    src: url(../fonte/Vampires.otf);
 }
 
-
+/* Responsividade */
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 @media screen and (max-width: 767px) {
-    .nav-list {
-        display: flex;
-        float: left;
-        background: #771212de;
-        width: 100%;
-        height: 100%;
-        font-size: 0.8em;
+    body {
+        overflow: hidden;
     }
-    li{
-        padding: 3vh;
-    }
-    .nav-list a {
-        display: flex;
-        justify-content: center;
-    }
-    img {
-        width: 100%;
-        display: flex;
-        padding-top: 1vh;
-
-    }
-    .ola{
-        font-size: 0.9em;
-    }
-    .Frase h1{
-        font-size: 1.2em;
-    }
-    .pagamento{
-
-        justify-content: center;
+    .nav-list{
+        position: absolute;
+        top: 25vh;
+        right: 0;
         width: 100vw;
-        height: 65vh;
+        height: 50vh;
+        background: #771212de;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
     }
-    .pagamento img {
-        height: 40vh;
-        width: 70vh;
-        padding-top: 10vh;
-
+    .mobile-menu{
+        display: block;
+        
     }
-    .pagamento h2{
-         display: flex;
-         text-align: center;
-         justify-content: center;
+    img{
+        width: 100%;
     }
-
-    .banner_imagem {
+    .banner_imagem{
         display: flex;
         justify-content: center;
-        margin-top: 10vh;
     }
-
-    .banner {
+    .banner{
         display: flex;
         flex-direction: column-reverse;
-        padding-bottom: 15vh;
+        padding-bottom: 3vh;
     }
-
-    .texto {
+    .texto{
         display: flex;
         flex-direction: column;
-        font-size: 1em;
     }
-    .horario{
-        padding-top: 10vh;
-        height: 70vh;
-    }
-    .roda_pe{
-        height: 30vw;
-    }
+}
+.nav-list.active{
+    transform: translateX(0);
+    overflow: hidden;
 }

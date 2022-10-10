@@ -80,13 +80,22 @@ hr {
     background-image: linear-gradient(to right, transparent, #DDA0DD, transparent);
 }
 
-
-/*  */
+/* Responsivo nav-bar  */
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(25 , 25 , 25);
+    margin: 8px;
+}
 
 /* itens cardapio */
 
 .container_produtos {
-    padding-top: 10vh;
+    margin-top: 20vh;
     width: 98vw;
     padding-bottom: 10vh;
 }
@@ -105,7 +114,6 @@ hr {
 }
 .jantinha {
     width: 60%;
-
     background: #DDA0DD;
     box-shadow: 30px 10px 42px 0 rgba( 31, 38, 135 ,0.37 ) ;
     backdrop-filter: blur( 7px );
@@ -115,12 +123,19 @@ hr {
     margin-bottom: 20%;
 }
 
-p {
+.jantinha p{
     padding-top: 3vh;
     font-size: 3em;
     padding-bottom: 8vh;
     font-family:'Vintage Queens';
     text-align: center;
+}
+.Porcao p{
+    padding-top: 3vh;
+    font-size: 3em;
+    padding-bottom: 8vh;
+    font-family:'Vintage Queens';
+    text-align: center; 
 }
 
 .valor {
@@ -145,7 +160,7 @@ p {
 }
 
 .observacao a {
-    background: linear-gradient(89.16deg, #06090F -7.21%, #00A3FF 148.5%);
+    background: linear-gradient(89.16deg, #06090F -7.21%, #1cec15 148.5%);
     color: #fafafa;
     backdrop-filter: blur(10px);
     padding: 10px 35px;
@@ -161,13 +176,12 @@ p {
     display: flex;
     justify-content: center;
 }
-.boton{
-    width: 100vh;
-}
 .boton {
+    width: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 5vh;
 }
 .alinhar_porção{
     display: flex;
@@ -189,7 +203,77 @@ p {
     text-align: center;
     font-family: 'Vintage Queens';
 }
+.pedido{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30vh;
+    text-align: center;
+}
+.pedido a{
+    background: linear-gradient(89.16deg, #06090F -7.21%, #1cec15 148.5%);
+    color: #fafafa;
+    backdrop-filter: blur(10px);
+    padding: 10px 35px;
+    max-width: 100px;
+    border: 1px solid #00A3FF;
+    transition: all 0.4s ease;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Saira";
+    white-space: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
 
+/* #footer */
+.roda_pe {
+    display: flex;
+    height: 2vw;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_roda_pe {
+    height: 5vh;
+}
+.container_roda_pe hr {
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, #771212de, transparent);
+}
+.contato {
+    padding-top: 8vh;
+    font-family: 'CaviarDreams';
+}
+
+.contato h1 {
+    font-size: 1em;
+}
+
+.contato p {
+    font-size: 1.6rem;
+}
+
+.rede_social img {
+
+    background-size: cover;
+    width: 20vh;
+    height: 20vh;
+
+}
+.ifood img{
+    background-size: cover;
+    width: 15vh;
+    height: 10vh;
+    padding-top: 6vh;
+    
+}
+.whatsapp img{
+    background-size: cover;
+    width: 12vh;
+    height: 12vh;
+    padding-top: 4vh;
+}
 @font-face {
     font-family: 'CaviarDreams';
     src: url(../fonte/CaviarDreams.ttf);
@@ -216,4 +300,55 @@ p {
     .Porcao{
         width: 80%;
     }
+}
+/* Responsividade */
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav-list {
+        display: flex;
+        float: left;
+        background: #771212de;
+        width: 100%;
+        height: 100%;
+        font-size: 0.8em;
+    }
+    li{
+        padding: 3vh;
+    }
+    .nav-list a {
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 100%;
+    }
+    .banner_imagem{
+        display: flex;
+        justify-content: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 3vh;
+    }
+    .observacao h2{
+        font-size: 1em;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.nav-list.active{
+    transform: translateX(0);
+    overflow: hidden;
 }
