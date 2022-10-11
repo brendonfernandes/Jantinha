@@ -200,7 +200,7 @@ hr {
     font-family: 'Saira';
     src: url(../fonte/Saira.ttf);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 367px) {
     .Combo2 {
         width: 80%;
     }
