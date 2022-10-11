@@ -201,6 +201,9 @@ hr {
     src: url(../fonte/Saira.ttf);
 }
 @media screen and (min-width: 367px) {
+    body{
+        overflow: hidden;
+    }
     .Combo2 {
         width: 80%;
     }
@@ -216,7 +219,7 @@ hr {
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 367px) {
     .nav-list {
         display: flex;
         float: left;
