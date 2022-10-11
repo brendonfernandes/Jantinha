@@ -319,10 +319,10 @@ hr {
         background: #771212de;
         width: 100%;
         height: 100%;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     li{
-        padding: 3vh;
+        padding: 2vh;
     }
     .nav-list a {
         display: flex;
