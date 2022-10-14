@@ -235,7 +235,7 @@ hr {
 }
 
 .container_roda_pe {
-    height: 5vh;
+    height: 10vh;
 }
 .container_roda_pe hr {
     height: 3px;
@@ -257,22 +257,23 @@ hr {
 .rede_social img {
 
     background-size: cover;
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
+    padding-top: 3vh;
 
 }
 .ifood img{
     background-size: cover;
-    width: 15vh;
+    width: 12vh;
     height: 10vh;
     padding-top: 6vh;
     
 }
 .whatsapp img{
     background-size: cover;
-    width: 12vh;
-    height: 12vh;
-    padding-top: 4vh;
+    width: 8vh;
+    height: 8vh;
+    padding-top: 6vh;
 }
 @font-face {
     font-family: 'CaviarDreams';
@@ -312,7 +313,7 @@ hr {
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 467px) {
     .nav-list {
         display: flex;
         float: left;
@@ -347,6 +348,11 @@ hr {
         display: flex;
         flex-direction: column;
     }
+    .roda_pe{
+        width: 96%;
+        padding-left: 1vh;
+    }
+
 }
 .nav-list.active{
     transform: translateX(0);
