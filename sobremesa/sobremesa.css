@@ -229,16 +229,14 @@ img {
     .sobremesa {
         width: 80%;
     }
+    .nav-bar{
+        justify-content: center;
+    }
     .nav-list {
-        display: flex;
-        float: left;
-        background: #771212de;
-        width: 100%;
-        height: 100%;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     li{
-        padding: 1vh;
+        padding: 20px;
     }
     .nav-list a {
         display: flex;
