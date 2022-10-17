@@ -244,6 +244,9 @@ img {
         display: flex;
         justify-content: center;
     }
+    .contato{
+        display: none;
+    }
     /* body {
         overflow: hidden;
     }
