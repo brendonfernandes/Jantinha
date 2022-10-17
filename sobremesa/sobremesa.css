@@ -242,8 +242,12 @@ img {
         display: flex;
         justify-content: center;
     }
-    .contato{
-        display: none;
+    .contato p{
+        font-size: 0.7em;
+    }
+    .contato h1{
+        font-size: 0.5em;
+        
     }
     /* body {
         overflow: hidden;
